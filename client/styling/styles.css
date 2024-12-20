@@ -1,0 +1,194 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #2C3E50; /* Dark Blue */
+    color: #ECF0F1; /* Light Gray */
+}
+
+h1, h2 {
+    margin: 20px 0;
+    color: #1ABC9C; /* Teal */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #34495E; /* Darker Blue */
+    border-radius: 8px;
+    width: 320px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"] {
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #1ABC9C; /* Teal */
+    border-radius: 6px;
+    width: calc(100% - 26px);
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #34495E; /* Darker Blue */
+    color: #ECF0F1; /* Light Gray */
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    border-color: #16A085; /* Darker Teal */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #F39C12; /* Orange */
+    box-shadow: 0 0 10px rgba(243, 156, 18, 0.6); /* Orange Glow */
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: #1ABC9C; /* Teal */
+    color: #34495E; /* Dark Blue */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #16A085; /* Darker Teal */
+    color: #ECF0F1; /* Light Gray */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 320px;
+    background-color: #34495E; /* Darker Blue */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul li {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #16A085; /* Darker Teal */
+    color: #ECF0F1; /* Light Gray */
+    border-radius: 6px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+}
+
+.task-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.complete-btn, .delete-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.complete-btn {
+    background-color: #27AE60; /* Green */
+    color: white;
+    border: none;
+}
+
+.complete-btn:hover {
+    background-color: #2ECC71; /* Lighter Green */
+    color: #ffffff;
+}
+
+.delete-btn {
+    background-color: #E74C3C; /* Red */
+    color: white;
+    border: none;
+}
+
+.delete-btn:hover {
+    background-color: #C0392B; /* Darker Red */
+    color: #ffffff;
+}
+
+.success-message {
+    color: #27AE60; /* Green */
+    font-weight: bold;
+}
+
+.error-message {
+    color: #E74C3C; /* Red */
+    font-weight: bold;
+}
+
+/* For laptops */
+@media (max-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+    form {
+        width: 400px;
+    }
+    ul {
+        width: 400px;
+    }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+    ul {
+        width: 90%;
+        padding: 15px;
+    }
+    ul li {
+        font-size: 14px;
+    }
+}
+
+/* For mobile phones*/
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    form {
+        width: 95%;
+        padding: 10px;
+    }
+    ul {
+        width: 95%;
+        padding: 10px;
+    }
+    ul li {
+        font-size: 12px;
+        padding: 10px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    .task-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
